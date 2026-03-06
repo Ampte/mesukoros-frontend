@@ -1,6 +1,6 @@
 ﻿# Frontend (MesuKoros)
 
-React + Vite app for MesuKoros.
+React + Vite app for MesuKoros. This folder is fully standalone and can be pushed to its own GitHub repository.
 
 ## Local run
 
@@ -22,4 +22,16 @@ Copy `.env.example` to `.env` and set:
 ```bash
 npm run build
 npm run preview
+```
+
+## Push frontend as separate repo
+
+```bash
+cd frontend
+git init
+git add .
+git commit -m "Frontend initial"
+git branch -M main
+git remote add origin https://github.com/<your-user>/<frontend-repo>.git
+git push -u origin main
 ```
