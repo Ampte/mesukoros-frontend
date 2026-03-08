@@ -1,4 +1,6 @@
-const rawApiUrl = import.meta.env.VITE_API_URL || "/api";
+const rawApiUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD
+  ? "https://backend-mk.garo2.com/api"
+  : "/api");
 export const API_URL = rawApiUrl.endsWith("/") ? rawApiUrl.slice(0, -1) : rawApiUrl;
 
 export function getAuth() {
