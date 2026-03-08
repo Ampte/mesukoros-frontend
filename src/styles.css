@@ -433,6 +433,11 @@ textarea {
   margin: 0;
 }
 
+.success-text {
+  color: var(--ok);
+  margin: 0;
+}
+
 .space-top {
   margin-top: 18px;
 }
