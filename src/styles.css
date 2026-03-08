@@ -59,6 +59,18 @@ h3 {
   backdrop-filter: blur(8px);
 }
 
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: clamp(56px, 7vw, 84px);
+  height: clamp(56px, 7vw, 84px);
+  object-fit: contain;
+}
+
 .brand-wrap h1 {
   font-size: clamp(1.4rem, 2vw, 2rem);
 }

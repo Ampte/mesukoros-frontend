@@ -33,8 +33,11 @@ export default function Header() {
     <>
       <header className="topbar">
         <div className="brand-wrap">
-          <span className="brand-badge">Farm to Home</span>
-          <h1>MesuKoros</h1>
+          <img className="brand-logo" src="/mk-logo.png" alt="MesuKoros logo" />
+          <div>
+            <span className="brand-badge">Farm to Home</span>
+            <h1>MesuKoros</h1>
+          </div>
         </div>
 
         {auth?.token && !isAuthPage && (
